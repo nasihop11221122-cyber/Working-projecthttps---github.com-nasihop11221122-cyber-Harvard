@@ -1,0 +1,146 @@
+@import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Orbitron:wght@400..900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+
+
+
+@layer base {
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Instrument Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    background-color: var(--color-secondary);
+    color: var(--color-text-dark);
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@theme {
+  /* ─── CORE BRAND COLORS ─── */
+  --color-primary: #0A0A0A;
+  --color-secondary: #FFFFFF;
+
+  /* ─── BACKGROUNDS ─── */
+  --color-bg-main: #FFFFFF;
+  --color-bg-card: #111111;
+  --color-bg-section: #F5F5F0;
+  --color-bg-light: #FAFAF8;
+
+  /* ─── TEXT'S Colors ─── */
+  --color-text-primary: #FFFFFF;
+  --color-text-dark: #0A0A0A;
+  --color-text-muted: #A0A0A0;
+  --color-text-label: #6B6B6B;
+
+  /* ─── BORDERS ─── */
+  --color-border-dark: #1F1F1F;
+  --color-border-light: #E4E4E0;
+
+  /* ─── BUTTONS ─── */
+  --color-btn-light-bg: #FFFFFF;
+  --color-btn-light-text: #0A0A0A;
+  --color-btn-dark-bg: #0A0A0A;
+  --color-btn-dark-text: #FFFFFF;
+
+  /* ─── ACCENT ─── */
+  --color-accent: #D4C9B8;
+  --color-accent-dark: #2A2A2A;
+}
+
+
+@layer components {
+  .section-head {
+    @apply text-4xl md:text-[52px] font-[82px] text-black tracking-tight;
+  }
+
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+    animation-duration: 0ms;
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-content {
+  width: max-content;
+  align-items: center;
+}
+
+
+/* .font-instrument {
+  font-family: 'Instrument Sans', sans-serif;
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-trajan {
+  font-family: 'Trajan Pro Bold', 'Trajan Pro', 'Cinzel', serif;
+} */
+
+/* SVG Tick Animation */
+.checkmark__circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #10b981;
+  fill: none;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  box-shadow: inset 0px 0px 0px #10b981;
+  animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+}
+
+.checkmark__check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes scale {
+
+  0%,
+  100% {
+    transform: none;
+  }
+
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px #10b981;
+  }
+}
