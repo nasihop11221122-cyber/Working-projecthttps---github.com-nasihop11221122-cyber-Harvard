@@ -58,7 +58,7 @@ import StoryComponent from '../components/sections/AboutSection/StoryComponent.j
 import OurTeam from '../components/sections/OurTeam'
 import Testimonial from '../components/sections/AboutSection/Testimonial.jsx'
 import SEO from '../services/SEO'
-import image from '../../public/images/Projects/principle.jfif'
+
 
 const About = () => {
     return (
@@ -73,7 +73,7 @@ const About = () => {
                 
                 // URL & Images
                 url="https://www.ssibannu.com/about"
-                image src={image}
+               image="https://res.cloudinary.com/dvutwc18m/image/upload/v1783675551/Principle_k7jsgv.jpg"
                 imageWidth="1200"
                 imageHeight="630"
                 

@@ -46,7 +46,7 @@ const AboutusComponent = () => {
                 {/* Image */}
                 <ScrollReveal className="mt-6 md:mt-8 lg:mt-12">
                     <img
-                        src={aboutus}
+                        src="https://res.cloudinary.com/dvutwc18m/image/upload/v1783673038/ourteam_qknjfo.jpg"
                         alt="About us"
                         className="w-full h-auto object-cover rounded-lg"
                         loading='lazy'

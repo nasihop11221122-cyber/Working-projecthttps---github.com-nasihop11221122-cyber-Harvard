@@ -4,9 +4,7 @@ import { ArrowBtn } from '../../UI/ArrowBtn';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import ScrollReveal from '../../../hooks/ScrollReveal';
-import about1 from "../../../../public/images/Projects/about1.jpg"
-import about2 from "../../../../public/images/Projects/about2.jpg"
-import about3 from "../../../../public/images/Projects/about3.jpg"
+
 gsap.registerPlugin(ScrollTrigger);
 
 const StoryComponent = () => {
@@ -131,9 +129,9 @@ const StoryComponent = () => {
 
                 {/* MOBILE + TABLET (normal grid) */}
                 <ScrollReveal className="grid grid-cols-1 sm:grid-cols-3 md:hidden gap-4 p-3">
-                    <img src={about1} className="w-full rounded-2xl object-cover" />
-                    <img src={about2} className="w-full rounded-2xl object-cover" />
-                    <img src={about3} className="w-full rounded-2xl object-cover" />
+                    <img src="https://res.cloudinary.com/dvutwc18m/image/upload/v1783672425/about1_u17tpl.jpg" className="w-full rounded-2xl object-cover" />
+                    <img src="https://res.cloudinary.com/dvutwc18m/image/upload/v1783672723/about2_lfvf9y.jpg" className="w-full rounded-2xl object-cover" />
+                    <img src="https://res.cloudinary.com/dvutwc18m/image/upload/v1783672762/about3_jxy7gc.jpg" className="w-full rounded-2xl object-cover" />
                 </ScrollReveal>
 
 
@@ -142,19 +140,19 @@ const StoryComponent = () => {
 
                     <img
                         ref={leftImg}
-                        src={about1}
+                        src="https://res.cloudinary.com/dvutwc18m/image/upload/v1783672425/about1_u17tpl.jpg"
                         className="absolute w-[28%] h-[85%] object-cover rounded-2xl top-0 left-0"
                     />
 
                     <img
                         ref={centerImg}
-                        src={about2}
+                        src="https://res.cloudinary.com/dvutwc18m/image/upload/v1783672723/about2_lfvf9y.jpg"
                         className="absolute w-[38%] h-[90%] object-cover rounded-2xl top-[10%] left-1/2 -translate-x-1/2"
                     />
 
                     <img
                         ref={rightImg}
-                        src={about3}
+                        src="https://res.cloudinary.com/dvutwc18m/image/upload/v1783672762/about3_jxy7gc.jpg"
                         className="absolute w-[28%] h-[85%] object-cover rounded-2xl top-0 right-0"
                     />
 

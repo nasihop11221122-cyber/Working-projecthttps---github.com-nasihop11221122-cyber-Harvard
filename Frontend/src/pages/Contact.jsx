@@ -140,7 +140,7 @@ import { MapPin, Phone, Mail } from "lucide-react";
 import { socialLinks } from "../constants/socialLinks.js";
 import ContactForm from "../components/UI/Form.jsx";
 import SEO from '../services/SEO'; // ✅ SEO Component Import
-import img from "../../public/images/Projects/Principle.jfif"
+
 
 const ContactPage = () => {
     // 🔹 Schema for Contact Page
@@ -228,7 +228,7 @@ const ContactPage = () => {
                         {/* Image */}
                         <div className="flex justify-center md:justify-start">
                             <img
-                                src={img}
+                                src="https://res.cloudinary.com/dvutwc18m/image/upload/v1783675551/Principle_k7jsgv.jpg"
                                 alt="SSI Bannu office contact - IT institute in Bannu"
                                 className="w-72 md:w-96 rounded-2xl object-cover"
                                 loading="lazy"

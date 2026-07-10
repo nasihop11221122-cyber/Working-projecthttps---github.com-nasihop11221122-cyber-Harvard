@@ -1,7 +1,7 @@
 // components/SEO.jsx
 import React from 'react';
 import { Helmet } from "react-helmet-async";
-import img from "../../public/images/Projects/principle.jfif"
+
 const SEO = ({
     // Required props
     title,

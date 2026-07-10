@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import logo from "../../../public/images/Projects/Logo.png"
+
 function Navbar2() {
   const navigate = useNavigate();
   const [pagesOpen, setPagesOpen] = useState(false);
@@ -123,7 +123,7 @@ function Navbar2() {
       >
         {/* Avatar */}
         <img
-          src={logo}
+          src="https://res.cloudinary.com/dvutwc18m/image/upload/v1783675392/Logo_brjkha.png"
           alt="Avatar"
           className="rounded-full object-cover border-2 border-white shadow-sm shrink-0"
           style={{
