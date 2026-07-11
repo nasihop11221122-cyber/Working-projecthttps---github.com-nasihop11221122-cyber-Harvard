@@ -14,6 +14,28 @@ import { ClientLogos } from '../../constants/Clients.js'
 import InfiniteScroller from '../common/InfiniteScroller.jsx';
 import { useNavigate } from 'react-router-dom';
 import Marquee from '../UI/Marquee.jsx';
+import {
+  GraduationCap,
+  BookOpen,
+  Library,
+  School,
+  Users,
+  Brain,
+  Award,
+  BadgeCheck,
+  Laptop,
+  Globe,
+  NotebookPen,
+  ClipboardList,
+  Calculator,
+  Lightbulb,
+  Microscope,
+  Target,
+  BookMarked,
+  MonitorSmartphone,
+  University,
+  FileText,
+} from "lucide-react";
 
 
 //header scrollable text lines...
@@ -26,117 +48,84 @@ const LINES = [`${AboutData.heading}`, `${AboutData.highlight}`];
 // ));
 const logos = [
   {
-    name: "React",
-    logo: "hhttps://www.svgrepo.com/show/508281/book.svg",
+    name: "Computer Science",
+    logo: GraduationCap,
   },
   {
-    name: "HTML",
-    logo: "https://www.svgrepo.com/show/501820/pin.svg",
+    name: "Online Courses",
+    logo: Laptop,
   },
   {
-    name: "CSS",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+    name: "Digital Library",
+    logo: Library,
   },
   {
-    name: "JavaScript",
-    logo: "https://www.svgrepo.com/show/501815/open-open-a-file.svg",
+    name: "Software Engineering",
+    logo: BookOpen,
   },
   {
-    name: "Node.js",
-    logo: "https://www.svgrepo.com/show/530640/pen.svg",
+    name: "Artificial Intelligence",
+    logo: Brain,
   },
   {
-    name: "Express",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+    name: "Students",
+    logo: Users,
   },
   {
-    name: "MongoDB",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
-  },
-  // ✅ Newly Added
-  {
-    name: "Redux",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
+    name: "Certifications",
+    logo: Award,
   },
   {
-    name: "Git",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+    name: "Verified Learning",
+    logo: BadgeCheck,
   },
   {
-    name: "GitHub",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+    name: "Assignments",
+    logo: ClipboardList,
   },
   {
-    name: "Cloudinary",
-    logo: "https://res.cloudinary.com/cloudinary-marketing/image/upload/v1599098500/creative_source/Logo/PNG/cloudinary_logo_blue_0720_2x.png",
+    name: "Study Notes",
+    logo: NotebookPen,
   },
   {
-    name: "Tailwind CSS",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+    name: "Mathematics",
+    logo: Calculator,
   },
   {
-    name: "TypeScript",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    name: "Science",
+    logo: Microscope,
   },
   {
-    name: "Postman",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
+    name: "Innovation",
+    logo: Lightbulb,
   },
   {
-    name: "VS Code",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
-  },
-
-  // 🗄️ Database & Backend
-  {
-    name: "Mongoose",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongoose/mongoose-original.svg",
+    name: "Global Education",
+    logo: Globe,
   },
   {
-    name: "MySQL",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+    name: "University",
+    logo: University,
   },
   {
-    name: "Firebase",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
-  },
-
-  // ⚙️ Dev Tools & Build
-  {
-    name: "Vite",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg",
+    name: "E-Learning",
+    logo: MonitorSmartphone,
   },
   {
-    name: "npm",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg",
+    name: "Study Materials",
+    logo: BookMarked,
   },
   {
-    name: "Webpack",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg",
-  },
-
-  // ☁️ Cloud & Deployment
-  {
-    name: "Docker",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+    name: "Exams",
+    logo: FileText,
   },
   {
-    name: "AWS",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+    name: "Career Goals",
+    logo: Target,
   },
   {
-    name: "Vercel",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg",
-  },
-
-  // 🔌 Real-time & Auth
-  {
-    name: "Socket.io",
-    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg",
-  },
-  {
-    name: "JWT",
-    logo: "https://cdn.worldvectorlogo.com/logos/jwt-3.svg",
+    name: "Academy",
+    logo: School,
   },
 ];
 
@@ -354,10 +343,14 @@ const About = () => {
                     <div className="w-full opacity-70 hover:opacity-100 transition duration-300">
 
                       <Marquee
-                        items={logoUrls.map((url) => ({
-                          icon: <img src={url} alt="logo" className="size-8" />,
-                          label: "",
-                        }))}
+                        items={logos.map((item) => {
+                          const Icon = item.logo;
+
+                          return {
+                            icon: <Icon className="size-8 text-blue-600" />,
+                            label: "",
+                          };
+                        })}
                         speed={30}
                       />
 

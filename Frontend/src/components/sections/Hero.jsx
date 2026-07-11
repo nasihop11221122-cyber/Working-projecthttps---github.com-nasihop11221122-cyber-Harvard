@@ -1,14 +1,14 @@
 import {
-    Code2,
-    Palette,
-    Film,
-    ShieldCheck,
-    Sparkles,
-    Atom,
-    Cpu,
-    Smartphone,
-    PenTool,
-    Box,
+  GraduationCap,
+  BookOpen,
+  Library,
+  School,
+  Users,
+  Brain,
+  BadgeCheck,
+  NotebookPen,
+  ClipboardList,
+  Award,
 } from "lucide-react";
 
 import { Link } from "react-router-dom";
@@ -24,16 +24,16 @@ import {
 import { EnrollmentModal } from "../common/EnrollmentModel.jsx";
 
 const MARQUEE_ITEMS = [
-    { label: "Web Engineering", icon: Code2 },
-    { label: "UI/UX Craft", icon: Palette },
-    { label: "Motion Editing", icon: Film },
-    { label: "Cyber Security", icon: ShieldCheck },
-    { label: "Growth Marketing", icon: Sparkles },
-    { label: "React Development", icon: Atom },
-    { label: "C++ Systems", icon: Cpu },
-    { label: "Mobile Apps", icon: Smartphone },
-    { label: "Visual Design", icon: PenTool },
-    { label: "3D Experience", icon: Box },
+  { label: "Computer Science", icon: GraduationCap },
+  { label: "Software Engineering", icon: BookOpen },
+  { label: "Digital Library", icon: Library },
+  { label: "Professional Courses", icon: School },
+  { label: "Student Community", icon: Users },
+  { label: "Artificial Intelligence", icon: Brain },
+  { label: "Certified Programs", icon: BadgeCheck },
+  { label: "Assignments & Notes", icon: NotebookPen },
+  { label: "Exams & Assessments", icon: ClipboardList },
+  { label: "Academic Excellence", icon: Award },
 ];
 
 const FLOAT_ICONS = [
@@ -601,7 +601,7 @@ const HeroSection = () => {
                                     backgroundClip: "text",
                                 }}
                             >
-                                Learn In Harvard School.
+                            The Harvard School.
                             </span>
 
                             <span
@@ -618,7 +618,7 @@ const HeroSection = () => {
                                     backgroundClip: "text",
                                 }}
                             >
-                                Start Your future Career In Harvard School.
+                                Where study is fun not a burden
                             </span>
                         </h1>
 
